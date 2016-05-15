@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90D58BC1CE717F9003242FA /* BoardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E90D58BB1CE717F9003242FA /* BoardTestCase.m */; };
 		E957E7CA1CE6005600426A5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E7C91CE6005600426A5F /* main.m */; };
 		E957E7CD1CE6005600426A5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E7CC1CE6005600426A5F /* AppDelegate.m */; };
 		E957E7D31CE6005600426A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E957E7D11CE6005600426A5F /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 		E957E8081CE611A900426A5F /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E8061CE611A900426A5F /* Board.m */; };
 		E957E80B1CE611B700426A5F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80A1CE611B700426A5F /* Player.m */; };
 		E957E80C1CE611B700426A5F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80A1CE611B700426A5F /* Player.m */; };
+		E957E80F1CE629CA00426A5F /* TileLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80E1CE629CA00426A5F /* TileLocation.m */; };
+		E957E8101CE629CA00426A5F /* TileLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80E1CE629CA00426A5F /* TileLocation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E90D58BB1CE717F9003242FA /* BoardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardTestCase.m; path = Model/BoardTestCase.m; sourceTree = "<group>"; };
 		E957E7C51CE6005500426A5F /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E957E7C91CE6005600426A5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E957E7CB1CE6005600426A5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		E957E8061CE611A900426A5F /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Board.m; path = Model/Board.m; sourceTree = "<group>"; };
 		E957E8091CE611B700426A5F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Model/Player.h; sourceTree = "<group>"; };
 		E957E80A1CE611B700426A5F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Model/Player.m; sourceTree = "<group>"; };
+		E957E80D1CE629CA00426A5F /* TileLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileLocation.h; path = Model/TileLocation.h; sourceTree = "<group>"; };
+		E957E80E1CE629CA00426A5F /* TileLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileLocation.m; path = Model/TileLocation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,7 @@
 			children = (
 				E957E7E21CE6005600426A5F /* TicTacToeTests.m */,
 				E957E7E41CE6005600426A5F /* Info.plist */,
+				E90D58BB1CE717F9003242FA /* BoardTestCase.m */,
 			);
 			path = TicTacToeTests;
 			sourceTree = "<group>";
@@ -171,6 +178,8 @@
 				E957E8061CE611A900426A5F /* Board.m */,
 				E957E8091CE611B700426A5F /* Player.h */,
 				E957E80A1CE611B700426A5F /* Player.m */,
+				E957E80D1CE629CA00426A5F /* TileLocation.h */,
+				E957E80E1CE629CA00426A5F /* TileLocation.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -309,6 +318,7 @@
 				E957E7CD1CE6005600426A5F /* AppDelegate.m in Sources */,
 				E957E7CA1CE6005600426A5F /* main.m in Sources */,
 				E957E8031CE6114B00426A5F /* Game.m in Sources */,
+				E957E80F1CE629CA00426A5F /* TileLocation.m in Sources */,
 				E957E80B1CE611B700426A5F /* Player.m in Sources */,
 				E957E8071CE611A900426A5F /* Board.m in Sources */,
 			);
@@ -319,7 +329,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E957E8041CE6114B00426A5F /* Game.m in Sources */,
+				E90D58BC1CE717F9003242FA /* BoardTestCase.m in Sources */,
 				E957E7FF1CE6064900426A5F /* GameViewController.m in Sources */,
+				E957E8101CE629CA00426A5F /* TileLocation.m in Sources */,
 				E957E8081CE611A900426A5F /* Board.m in Sources */,
 				E957E7E31CE6005600426A5F /* TicTacToeTests.m in Sources */,
 				E957E80C1CE611B700426A5F /* Player.m in Sources */,

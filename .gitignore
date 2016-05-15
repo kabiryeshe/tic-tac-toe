@@ -1,1 +1,8 @@
 **/xcuserdata/
+*.xcworkspace
+!default.xcworkspace
+
+
+#Pods
+
+Pods/

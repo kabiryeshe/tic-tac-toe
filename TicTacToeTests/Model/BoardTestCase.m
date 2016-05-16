@@ -8,6 +8,7 @@
 @interface BoardTestCase : XCTestCase {
     NSString *mark1;
     NSString *mark2;
+    NSObject *empty;    
 }
 
 @end
@@ -20,6 +21,23 @@
     mark1 = @"0";
     mark2 = @"X";
 }
+
+- (void)testThatItMarksTileAtGivenLocation {
+    
+    
+    Board* board = [[Board alloc]initWithTiles:[@[
+                                                 [@[mark1, mark2, mark1] mutableCopy],
+                                                 [@[mark2, EMPTY, mark2] mutableCopy],
+                                                 [@[mark1, mark1, mark2] mutableCopy]
+                                                 ]mutableCopy]];
+    NSInteger markingsBefore = board.numberOfMarkedTiles;
+    assertThatLong(board.numberOfMarkedTiles, equalToLong(8));
+    
+    [board markTile:[TileLocation locationWithRow:1 column:1] withMark:mark1];
+    
+    assertThatLong(board.numberOfMarkedTiles, equalToLong(markingsBefore + 1));
+}
+
 
 - (void)testThatItReturnsRowWhenItsAllMarkingsAreSame {
     

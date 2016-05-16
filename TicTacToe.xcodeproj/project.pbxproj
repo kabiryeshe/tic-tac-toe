@@ -1,1434 +1,665 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>02B7BD64B693D8C00114975E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2C7F9D5E4AC15ED2B70AAAD6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>42B583D8F31B16D3AEEC579B</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6FF07FA249AA9F38AE54657B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TicTacToeTests.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>932F31E7D4F1CA6A294F6A3F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6FF07FA249AA9F38AE54657B</string>
-				<string>CD5C2E3FCD62550F91E1DE36</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>99FAF6456782FBC9760B05EE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-TicTacToeTests.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CD5C2E3FCD62550F91E1DE36</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-TicTacToeTests.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D6718A63F25B0EE89847CC9D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>99FAF6456782FBC9760B05EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E90D58BB1CE717F9003242FA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>BoardTestCase.m</string>
-			<key>path</key>
-			<string>Model/BoardTestCase.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E90D58BC1CE717F9003242FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E90D58BB1CE717F9003242FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7BC1CE6005500426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E7C71CE6005600426A5F</string>
-				<string>E957E7E11CE6005600426A5F</string>
-				<string>E957E7EC1CE6005600426A5F</string>
-				<string>E957E7C61CE6005500426A5F</string>
-				<string>932F31E7D4F1CA6A294F6A3F</string>
-				<string>ED7AC3EECCAC7564081FF331</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7BD1CE6005500426A5F</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>thoughtworks</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>E957E7C41CE6005500426A5F</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-					</dict>
-					<key>E957E7DD1CE6005600426A5F</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>E957E7C41CE6005500426A5F</string>
-					</dict>
-					<key>E957E7E81CE6005600426A5F</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3</string>
-						<key>TestTargetID</key>
-						<string>E957E7C41CE6005500426A5F</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>E957E7C01CE6005500426A5F</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>E957E7BC1CE6005500426A5F</string>
-			<key>productRefGroup</key>
-			<string>E957E7C61CE6005500426A5F</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>E957E7C41CE6005500426A5F</string>
-				<string>E957E7DD1CE6005600426A5F</string>
-				<string>E957E7E81CE6005600426A5F</string>
-			</array>
-		</dict>
-		<key>E957E7C01CE6005500426A5F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E957E7F01CE6005600426A5F</string>
-				<string>E957E7F11CE6005600426A5F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E957E7C11CE6005500426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E957E7FE1CE6064900426A5F</string>
-				<string>E957E7CD1CE6005600426A5F</string>
-				<string>E957E7CA1CE6005600426A5F</string>
-				<string>E957E8031CE6114B00426A5F</string>
-				<string>E957E80F1CE629CA00426A5F</string>
-				<string>E957E80B1CE611B700426A5F</string>
-				<string>E957E8071CE611A900426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7C21CE6005500426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7C31CE6005500426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E957E7D81CE6005600426A5F</string>
-				<string>E957E7D51CE6005600426A5F</string>
-				<string>E957E7D31CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7C41CE6005500426A5F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E957E7F21CE6005600426A5F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E957E7C11CE6005500426A5F</string>
-				<string>E957E7C21CE6005500426A5F</string>
-				<string>E957E7C31CE6005500426A5F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TicTacToe</string>
-			<key>productName</key>
-			<string>TicTacToe</string>
-			<key>productReference</key>
-			<string>E957E7C51CE6005500426A5F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>E957E7C51CE6005500426A5F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TicTacToe.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E957E7C61CE6005500426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E7C51CE6005500426A5F</string>
-				<string>E957E7DE1CE6005600426A5F</string>
-				<string>E957E7E91CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7C71CE6005600426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E8001CE6112B00426A5F</string>
-				<string>E957E7FB1CE6061100426A5F</string>
-				<string>E957E7CB1CE6005600426A5F</string>
-				<string>E957E7CC1CE6005600426A5F</string>
-				<string>E957E7D11CE6005600426A5F</string>
-				<string>E957E7D41CE6005600426A5F</string>
-				<string>E957E7D61CE6005600426A5F</string>
-				<string>E957E7D91CE6005600426A5F</string>
-				<string>E957E7C81CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TicTacToe</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7C81CE6005600426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E7C91CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7C91CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7CA1CE6005600426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7C91CE6005600426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7CB1CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7CC1CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7CD1CE6005600426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7CC1CE6005600426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7D11CE6005600426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E7D21CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7D21CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7D31CE6005600426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7D11CE6005600426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7D41CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7D51CE6005600426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7D41CE6005600426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7D61CE6005600426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E7D71CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7D71CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7D81CE6005600426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7D61CE6005600426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7D91CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7DA1CE6005600426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E957E8041CE6114B00426A5F</string>
-				<string>E90D58BC1CE717F9003242FA</string>
-				<string>E957E7FF1CE6064900426A5F</string>
-				<string>E957E8101CE629CA00426A5F</string>
-				<string>E957E8081CE611A900426A5F</string>
-				<string>E957E7E31CE6005600426A5F</string>
-				<string>E957E80C1CE611B700426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7DB1CE6005600426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D6718A63F25B0EE89847CC9D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7DC1CE6005600426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7DD1CE6005600426A5F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E957E7F51CE6005600426A5F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>2C7F9D5E4AC15ED2B70AAAD6</string>
-				<string>E957E7DA1CE6005600426A5F</string>
-				<string>E957E7DB1CE6005600426A5F</string>
-				<string>E957E7DC1CE6005600426A5F</string>
-				<string>42B583D8F31B16D3AEEC579B</string>
-				<string>02B7BD64B693D8C00114975E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E957E7E01CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TicTacToeTests</string>
-			<key>productName</key>
-			<string>TicTacToeTests</string>
-			<key>productReference</key>
-			<string>E957E7DE1CE6005600426A5F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>E957E7DE1CE6005600426A5F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TicTacToeTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E957E7DF1CE6005600426A5F</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E957E7BD1CE6005500426A5F</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E957E7C41CE6005500426A5F</string>
-			<key>remoteInfo</key>
-			<string>TicTacToe</string>
-		</dict>
-		<key>E957E7E01CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E957E7C41CE6005500426A5F</string>
-			<key>targetProxy</key>
-			<string>E957E7DF1CE6005600426A5F</string>
-		</dict>
-		<key>E957E7E11CE6005600426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E7E21CE6005600426A5F</string>
-				<string>E957E7E41CE6005600426A5F</string>
-				<string>E90D58BB1CE717F9003242FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TicTacToeTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7E21CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TicTacToeTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7E31CE6005600426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7E21CE6005600426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7E41CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7E51CE6005600426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E957E7EE1CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7E61CE6005600426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7E71CE6005600426A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>E957E7E81CE6005600426A5F</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>E957E7F81CE6005600426A5F</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E957E7E51CE6005600426A5F</string>
-				<string>E957E7E61CE6005600426A5F</string>
-				<string>E957E7E71CE6005600426A5F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>E957E7EB1CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>TicTacToeUITests</string>
-			<key>productName</key>
-			<string>TicTacToeUITests</string>
-			<key>productReference</key>
-			<string>E957E7E91CE6005600426A5F</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>E957E7E91CE6005600426A5F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>TicTacToeUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E957E7EA1CE6005600426A5F</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>E957E7BD1CE6005500426A5F</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>E957E7C41CE6005500426A5F</string>
-			<key>remoteInfo</key>
-			<string>TicTacToe</string>
-		</dict>
-		<key>E957E7EB1CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>E957E7C41CE6005500426A5F</string>
-			<key>targetProxy</key>
-			<string>E957E7EA1CE6005600426A5F</string>
-		</dict>
-		<key>E957E7EC1CE6005600426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E7ED1CE6005600426A5F</string>
-				<string>E957E7EF1CE6005600426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>TicTacToeUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7ED1CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>TicTacToeUITests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7EE1CE6005600426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7ED1CE6005600426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7EF1CE6005600426A5F</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7F01CE6005600426A5F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E957E7F11CE6005600426A5F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E957E7F21CE6005600426A5F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E957E7F31CE6005600426A5F</string>
-				<string>E957E7F41CE6005600426A5F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E957E7F31CE6005600426A5F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TicTacToe/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.thoughtworks.TicTacToe</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E957E7F41CE6005600426A5F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TicTacToe/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.thoughtworks.TicTacToe</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E957E7F51CE6005600426A5F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E957E7F61CE6005600426A5F</string>
-				<string>E957E7F71CE6005600426A5F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E957E7F61CE6005600426A5F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>6FF07FA249AA9F38AE54657B</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TicTacToeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.thoughtworks.TicTacToeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E957E7F71CE6005600426A5F</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>CD5C2E3FCD62550F91E1DE36</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>TicTacToeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.thoughtworks.TicTacToeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E957E7F81CE6005600426A5F</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>E957E7F91CE6005600426A5F</string>
-				<string>E957E7FA1CE6005600426A5F</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>E957E7F91CE6005600426A5F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>TicTacToeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.thoughtworks.TicTacToeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>TicTacToe</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>E957E7FA1CE6005600426A5F</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>TicTacToeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.thoughtworks.TicTacToeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>TicTacToe</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>E957E7FB1CE6061100426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E7FC1CE6064900426A5F</string>
-				<string>E957E7FD1CE6064900426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7FC1CE6064900426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>GameViewController.h</string>
-			<key>path</key>
-			<string>Controller/GameViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7FD1CE6064900426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>GameViewController.m</string>
-			<key>path</key>
-			<string>Controller/GameViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E7FE1CE6064900426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7FD1CE6064900426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E7FF1CE6064900426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E7FD1CE6064900426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E8001CE6112B00426A5F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E957E8011CE6114B00426A5F</string>
-				<string>E957E8021CE6114B00426A5F</string>
-				<string>E957E8051CE611A900426A5F</string>
-				<string>E957E8061CE611A900426A5F</string>
-				<string>E957E8091CE611B700426A5F</string>
-				<string>E957E80A1CE611B700426A5F</string>
-				<string>E957E80D1CE629CA00426A5F</string>
-				<string>E957E80E1CE629CA00426A5F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E8011CE6114B00426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Game.h</string>
-			<key>path</key>
-			<string>Model/Game.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E8021CE6114B00426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Game.m</string>
-			<key>path</key>
-			<string>Model/Game.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E8031CE6114B00426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E8021CE6114B00426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E8041CE6114B00426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E8021CE6114B00426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E8051CE611A900426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Board.h</string>
-			<key>path</key>
-			<string>Model/Board.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E8061CE611A900426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Board.m</string>
-			<key>path</key>
-			<string>Model/Board.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E8071CE611A900426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E8061CE611A900426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E8081CE611A900426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E8061CE611A900426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E8091CE611B700426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Player.h</string>
-			<key>path</key>
-			<string>Model/Player.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E80A1CE611B700426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Player.m</string>
-			<key>path</key>
-			<string>Model/Player.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E80B1CE611B700426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E80A1CE611B700426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E80C1CE611B700426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E80A1CE611B700426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E80D1CE629CA00426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>TileLocation.h</string>
-			<key>path</key>
-			<string>Model/TileLocation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E80E1CE629CA00426A5F</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>TileLocation.m</string>
-			<key>path</key>
-			<string>Model/TileLocation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E957E80F1CE629CA00426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E80E1CE629CA00426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E957E8101CE629CA00426A5F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E957E80E1CE629CA00426A5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ED7AC3EECCAC7564081FF331</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>99FAF6456782FBC9760B05EE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>E957E7BD1CE6005500426A5F</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6718A63F25B0EE89847CC9D /* libPods-TicTacToeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99FAF6456782FBC9760B05EE /* libPods-TicTacToeTests.a */; };
+		E90D58BC1CE717F9003242FA /* BoardTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = E90D58BB1CE717F9003242FA /* BoardTestCase.m */; };
+		E921B7101CE86CA100C47382 /* GameTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E921B70F1CE86CA100C47382 /* GameTest.m */; };
+		E957E7CA1CE6005600426A5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E7C91CE6005600426A5F /* main.m */; };
+		E957E7CD1CE6005600426A5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E7CC1CE6005600426A5F /* AppDelegate.m */; };
+		E957E7D31CE6005600426A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E957E7D11CE6005600426A5F /* Main.storyboard */; };
+		E957E7D51CE6005600426A5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E957E7D41CE6005600426A5F /* Assets.xcassets */; };
+		E957E7D81CE6005600426A5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E957E7D61CE6005600426A5F /* LaunchScreen.storyboard */; };
+		E957E7E31CE6005600426A5F /* TicTacToeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E7E21CE6005600426A5F /* TicTacToeTests.m */; };
+		E957E7EE1CE6005600426A5F /* TicTacToeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E7ED1CE6005600426A5F /* TicTacToeUITests.m */; };
+		E957E7FE1CE6064900426A5F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E7FD1CE6064900426A5F /* GameViewController.m */; };
+		E957E7FF1CE6064900426A5F /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E7FD1CE6064900426A5F /* GameViewController.m */; };
+		E957E8031CE6114B00426A5F /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E8021CE6114B00426A5F /* Game.m */; };
+		E957E8041CE6114B00426A5F /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E8021CE6114B00426A5F /* Game.m */; };
+		E957E8071CE611A900426A5F /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E8061CE611A900426A5F /* Board.m */; };
+		E957E8081CE611A900426A5F /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E8061CE611A900426A5F /* Board.m */; };
+		E957E80B1CE611B700426A5F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80A1CE611B700426A5F /* Player.m */; };
+		E957E80C1CE611B700426A5F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80A1CE611B700426A5F /* Player.m */; };
+		E957E80F1CE629CA00426A5F /* TileLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80E1CE629CA00426A5F /* TileLocation.m */; };
+		E957E8101CE629CA00426A5F /* TileLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80E1CE629CA00426A5F /* TileLocation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E957E7DF1CE6005600426A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E957E7BD1CE6005500426A5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E957E7C41CE6005500426A5F;
+			remoteInfo = TicTacToe;
+		};
+		E957E7EA1CE6005600426A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E957E7BD1CE6005500426A5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E957E7C41CE6005500426A5F;
+			remoteInfo = TicTacToe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6FF07FA249AA9F38AE54657B /* Pods-TicTacToeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		99FAF6456782FBC9760B05EE /* libPods-TicTacToeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicTacToeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5C2E3FCD62550F91E1DE36 /* Pods-TicTacToeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicTacToeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests.release.xcconfig"; sourceTree = "<group>"; };
+		E90D58BB1CE717F9003242FA /* BoardTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BoardTestCase.m; path = Model/BoardTestCase.m; sourceTree = "<group>"; };
+		E921B70F1CE86CA100C47382 /* GameTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameTest.m; path = Model/GameTest.m; sourceTree = "<group>"; };
+		E957E7C51CE6005500426A5F /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E957E7C91CE6005600426A5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E957E7CB1CE6005600426A5F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E957E7CC1CE6005600426A5F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E957E7D21CE6005600426A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E957E7D41CE6005600426A5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E957E7D71CE6005600426A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E957E7D91CE6005600426A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E957E7DE1CE6005600426A5F /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E957E7E21CE6005600426A5F /* TicTacToeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicTacToeTests.m; sourceTree = "<group>"; };
+		E957E7E41CE6005600426A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E957E7E91CE6005600426A5F /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E957E7ED1CE6005600426A5F /* TicTacToeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicTacToeUITests.m; sourceTree = "<group>"; };
+		E957E7EF1CE6005600426A5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E957E7FC1CE6064900426A5F /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameViewController.h; path = Controller/GameViewController.h; sourceTree = "<group>"; };
+		E957E7FD1CE6064900426A5F /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameViewController.m; path = Controller/GameViewController.m; sourceTree = "<group>"; };
+		E957E8011CE6114B00426A5F /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = Model/Game.h; sourceTree = "<group>"; };
+		E957E8021CE6114B00426A5F /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = Model/Game.m; sourceTree = "<group>"; };
+		E957E8051CE611A900426A5F /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Board.h; path = Model/Board.h; sourceTree = "<group>"; };
+		E957E8061CE611A900426A5F /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Board.m; path = Model/Board.m; sourceTree = "<group>"; };
+		E957E8091CE611B700426A5F /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = Model/Player.h; sourceTree = "<group>"; };
+		E957E80A1CE611B700426A5F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Model/Player.m; sourceTree = "<group>"; };
+		E957E80D1CE629CA00426A5F /* TileLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileLocation.h; path = Model/TileLocation.h; sourceTree = "<group>"; };
+		E957E80E1CE629CA00426A5F /* TileLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileLocation.m; path = Model/TileLocation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E957E7C21CE6005500426A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E957E7DB1CE6005600426A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6718A63F25B0EE89847CC9D /* libPods-TicTacToeTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E957E7E61CE6005600426A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		932F31E7D4F1CA6A294F6A3F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FF07FA249AA9F38AE54657B /* Pods-TicTacToeTests.debug.xcconfig */,
+				CD5C2E3FCD62550F91E1DE36 /* Pods-TicTacToeTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E921B70C1CE86C6A00C47382 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E90D58BB1CE717F9003242FA /* BoardTestCase.m */,
+				E921B70F1CE86CA100C47382 /* GameTest.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E957E7BC1CE6005500426A5F = {
+			isa = PBXGroup;
+			children = (
+				E957E7C71CE6005600426A5F /* TicTacToe */,
+				E957E7E11CE6005600426A5F /* TicTacToeTests */,
+				E957E7EC1CE6005600426A5F /* TicTacToeUITests */,
+				E957E7C61CE6005500426A5F /* Products */,
+				932F31E7D4F1CA6A294F6A3F /* Pods */,
+				ED7AC3EECCAC7564081FF331 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E957E7C61CE6005500426A5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E957E7C51CE6005500426A5F /* TicTacToe.app */,
+				E957E7DE1CE6005600426A5F /* TicTacToeTests.xctest */,
+				E957E7E91CE6005600426A5F /* TicTacToeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E957E7C71CE6005600426A5F /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				E957E8001CE6112B00426A5F /* Model */,
+				E957E7FB1CE6061100426A5F /* Controller */,
+				E957E7CB1CE6005600426A5F /* AppDelegate.h */,
+				E957E7CC1CE6005600426A5F /* AppDelegate.m */,
+				E957E7D11CE6005600426A5F /* Main.storyboard */,
+				E957E7D41CE6005600426A5F /* Assets.xcassets */,
+				E957E7D61CE6005600426A5F /* LaunchScreen.storyboard */,
+				E957E7D91CE6005600426A5F /* Info.plist */,
+				E957E7C81CE6005600426A5F /* Supporting Files */,
+			);
+			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		E957E7C81CE6005600426A5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E957E7C91CE6005600426A5F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E957E7E11CE6005600426A5F /* TicTacToeTests */ = {
+			isa = PBXGroup;
+			children = (
+				E957E7E21CE6005600426A5F /* TicTacToeTests.m */,
+				E957E7E41CE6005600426A5F /* Info.plist */,
+				E921B70C1CE86C6A00C47382 /* Model */,
+			);
+			path = TicTacToeTests;
+			sourceTree = "<group>";
+		};
+		E957E7EC1CE6005600426A5F /* TicTacToeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E957E7ED1CE6005600426A5F /* TicTacToeUITests.m */,
+				E957E7EF1CE6005600426A5F /* Info.plist */,
+			);
+			path = TicTacToeUITests;
+			sourceTree = "<group>";
+		};
+		E957E7FB1CE6061100426A5F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E957E7FC1CE6064900426A5F /* GameViewController.h */,
+				E957E7FD1CE6064900426A5F /* GameViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		E957E8001CE6112B00426A5F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E957E8011CE6114B00426A5F /* Game.h */,
+				E957E8021CE6114B00426A5F /* Game.m */,
+				E957E8051CE611A900426A5F /* Board.h */,
+				E957E8061CE611A900426A5F /* Board.m */,
+				E957E8091CE611B700426A5F /* Player.h */,
+				E957E80A1CE611B700426A5F /* Player.m */,
+				E957E80D1CE629CA00426A5F /* TileLocation.h */,
+				E957E80E1CE629CA00426A5F /* TileLocation.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ED7AC3EECCAC7564081FF331 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99FAF6456782FBC9760B05EE /* libPods-TicTacToeTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E957E7C41CE6005500426A5F /* TicTacToe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E957E7F21CE6005600426A5F /* Build configuration list for PBXNativeTarget "TicTacToe" */;
+			buildPhases = (
+				E957E7C11CE6005500426A5F /* Sources */,
+				E957E7C21CE6005500426A5F /* Frameworks */,
+				E957E7C31CE6005500426A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicTacToe;
+			productName = TicTacToe;
+			productReference = E957E7C51CE6005500426A5F /* TicTacToe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E957E7DD1CE6005600426A5F /* TicTacToeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E957E7F51CE6005600426A5F /* Build configuration list for PBXNativeTarget "TicTacToeTests" */;
+			buildPhases = (
+				2C7F9D5E4AC15ED2B70AAAD6 /* Check Pods Manifest.lock */,
+				E957E7DA1CE6005600426A5F /* Sources */,
+				E957E7DB1CE6005600426A5F /* Frameworks */,
+				E957E7DC1CE6005600426A5F /* Resources */,
+				42B583D8F31B16D3AEEC579B /* Embed Pods Frameworks */,
+				02B7BD64B693D8C00114975E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E957E7E01CE6005600426A5F /* PBXTargetDependency */,
+			);
+			name = TicTacToeTests;
+			productName = TicTacToeTests;
+			productReference = E957E7DE1CE6005600426A5F /* TicTacToeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E957E7E81CE6005600426A5F /* TicTacToeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E957E7F81CE6005600426A5F /* Build configuration list for PBXNativeTarget "TicTacToeUITests" */;
+			buildPhases = (
+				E957E7E51CE6005600426A5F /* Sources */,
+				E957E7E61CE6005600426A5F /* Frameworks */,
+				E957E7E71CE6005600426A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E957E7EB1CE6005600426A5F /* PBXTargetDependency */,
+			);
+			name = TicTacToeUITests;
+			productName = TicTacToeUITests;
+			productReference = E957E7E91CE6005600426A5F /* TicTacToeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E957E7BD1CE6005500426A5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = thoughtworks;
+				TargetAttributes = {
+					E957E7C41CE6005500426A5F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					E957E7DD1CE6005600426A5F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E957E7C41CE6005500426A5F;
+					};
+					E957E7E81CE6005600426A5F = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = E957E7C41CE6005500426A5F;
+					};
+				};
+			};
+			buildConfigurationList = E957E7C01CE6005500426A5F /* Build configuration list for PBXProject "TicTacToe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E957E7BC1CE6005500426A5F;
+			productRefGroup = E957E7C61CE6005500426A5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E957E7C41CE6005500426A5F /* TicTacToe */,
+				E957E7DD1CE6005600426A5F /* TicTacToeTests */,
+				E957E7E81CE6005600426A5F /* TicTacToeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E957E7C31CE6005500426A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E957E7D81CE6005600426A5F /* LaunchScreen.storyboard in Resources */,
+				E957E7D51CE6005600426A5F /* Assets.xcassets in Resources */,
+				E957E7D31CE6005600426A5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E957E7DC1CE6005600426A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E957E7E71CE6005600426A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02B7BD64B693D8C00114975E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C7F9D5E4AC15ED2B70AAAD6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42B583D8F31B16D3AEEC579B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicTacToeTests/Pods-TicTacToeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E957E7C11CE6005500426A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E957E7FE1CE6064900426A5F /* GameViewController.m in Sources */,
+				E957E7CD1CE6005600426A5F /* AppDelegate.m in Sources */,
+				E957E7CA1CE6005600426A5F /* main.m in Sources */,
+				E957E8031CE6114B00426A5F /* Game.m in Sources */,
+				E957E80F1CE629CA00426A5F /* TileLocation.m in Sources */,
+				E957E80B1CE611B700426A5F /* Player.m in Sources */,
+				E957E8071CE611A900426A5F /* Board.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E957E7DA1CE6005600426A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E957E8041CE6114B00426A5F /* Game.m in Sources */,
+				E90D58BC1CE717F9003242FA /* BoardTestCase.m in Sources */,
+				E957E7FF1CE6064900426A5F /* GameViewController.m in Sources */,
+				E957E8101CE629CA00426A5F /* TileLocation.m in Sources */,
+				E957E8081CE611A900426A5F /* Board.m in Sources */,
+				E957E7E31CE6005600426A5F /* TicTacToeTests.m in Sources */,
+				E957E80C1CE611B700426A5F /* Player.m in Sources */,
+				E921B7101CE86CA100C47382 /* GameTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E957E7E51CE6005600426A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E957E7EE1CE6005600426A5F /* TicTacToeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E957E7E01CE6005600426A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E957E7C41CE6005500426A5F /* TicTacToe */;
+			targetProxy = E957E7DF1CE6005600426A5F /* PBXContainerItemProxy */;
+		};
+		E957E7EB1CE6005600426A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E957E7C41CE6005500426A5F /* TicTacToe */;
+			targetProxy = E957E7EA1CE6005600426A5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E957E7D11CE6005600426A5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E957E7D21CE6005600426A5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E957E7D61CE6005600426A5F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E957E7D71CE6005600426A5F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E957E7F01CE6005600426A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E957E7F11CE6005600426A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E957E7F31CE6005600426A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.TicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E957E7F41CE6005600426A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TicTacToe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.TicTacToe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E957E7F61CE6005600426A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FF07FA249AA9F38AE54657B /* Pods-TicTacToeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TicTacToeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.TicTacToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
+			};
+			name = Debug;
+		};
+		E957E7F71CE6005600426A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD5C2E3FCD62550F91E1DE36 /* Pods-TicTacToeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TicTacToeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.TicTacToeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TicTacToe.app/TicTacToe";
+			};
+			name = Release;
+		};
+		E957E7F91CE6005600426A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TicTacToeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.TicTacToeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TicTacToe;
+			};
+			name = Debug;
+		};
+		E957E7FA1CE6005600426A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TicTacToeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.thoughtworks.TicTacToeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TicTacToe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E957E7C01CE6005500426A5F /* Build configuration list for PBXProject "TicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E957E7F01CE6005600426A5F /* Debug */,
+				E957E7F11CE6005600426A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E957E7F21CE6005600426A5F /* Build configuration list for PBXNativeTarget "TicTacToe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E957E7F31CE6005600426A5F /* Debug */,
+				E957E7F41CE6005600426A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E957E7F51CE6005600426A5F /* Build configuration list for PBXNativeTarget "TicTacToeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E957E7F61CE6005600426A5F /* Debug */,
+				E957E7F71CE6005600426A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E957E7F81CE6005600426A5F /* Build configuration list for PBXNativeTarget "TicTacToeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E957E7F91CE6005600426A5F /* Debug */,
+				E957E7FA1CE6005600426A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E957E7BD1CE6005500426A5F /* Project object */;
+}

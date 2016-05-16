@@ -8,10 +8,7 @@
 @property(nonatomic, strong) Board *board;
 @property(nonatomic, strong) Player *player1;
 @property(nonatomic, strong) Player *player2;
-@property(nonatomic, strong) Player *nextTurn;
 @property(nonatomic, strong) Player* currentPlayer;
-@property(nonatomic) NSInteger turnsPlayed;
-
 
 @end
 
@@ -26,7 +23,7 @@
         _board = board;
         _player1 = player1;
         _player2 = player2;
-        _turnsPlayed = 0;
+        _currentPlayer = player1;
     }
     
     return self;
@@ -34,30 +31,39 @@
 
 - (void)startGame {
     
-    self.turnsPlayed = 0;
     self.currentPlayer = self.player1;
-    self.nextTurn = self.player2;
     [self.board reset];
 }
 
 
 - (GameStatus)playMove:(TileLocation *)tileLocation {
     
-    [self.board markTile:tileLocation forPlayer:self.currentPlayer];
-    self.turnsPlayed += 1;
+    [self.board markTile:tileLocation withMark:self.currentPlayer];
+
     GameStatus gameStatus = [self checkForGameStatus];
+    self.currentPlayer = [self nextPlayer];
     return gameStatus;
 }
 
 
 - (GameStatus)checkForGameStatus {
     
-    if(self.turnsPlayed < 5) {
+    if(self.board.numberOfMarkedTiles < 5) {
         return NEXT_MOVE;
     }
-    
-    [self.board checkForThreeContinuousMarks];
-    return DRAW;
+    if(self.board.numberOfMarkedTiles == 9) {
+        return DRAW;
+    }
+    NSArray *tileLocations = [self.board checkForThreeContinuousMarks];
+    if(tileLocations && [tileLocations count] == 3) {
+        return self.currentPlayer == self.player1 ? PLAYER_1_WINS : PLAYER_2_WINS;
+        
+    }
+    return NEXT_MOVE;
+}
+
+- (Player *)nextPlayer {
+    return self.currentPlayer == self.player1 ? self.player2 : self.player1;
 }
 
 //Property accessors

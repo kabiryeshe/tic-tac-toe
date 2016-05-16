@@ -4,25 +4,28 @@
 #import "Player.h"
 
 static const NSInteger BOARD_SIZE = 3;
+NSString * const EMPTY = @"empty";
 
 @interface Board ()
 
-@property(nonatomic, strong) NSArray* tiles;
+@property(nonatomic, strong) NSMutableArray* tiles;
+@property(nonatomic) NSInteger numberOfMarkedTiles;
 
 @end
 
 @implementation Board
 
-- (instancetype)init {
-    
-    self = [super init];
-    return self;
-}
-
-- (instancetype)initWithTiles:(NSArray *)tiles {
+- (instancetype)initWithTiles:(NSMutableArray *)tiles {
     self = [super init];
     if(self) {
         _tiles = tiles;
+        for(NSMutableArray* row in tiles) {
+            for(NSObject *mark in row) {
+                if(EMPTY != mark ) {
+                    _numberOfMarkedTiles++;
+                }
+            }
+        }
     }
     return self;
 }
@@ -32,9 +35,12 @@ static const NSInteger BOARD_SIZE = 3;
 }
 
 
-- (void)markTile:(TileLocation *)location forPlayer:(Player *)player {
-    self.tiles[location.row][location.column] = player;
+- (void)markTile:(TileLocation *)location withMark:(NSObject *)mark {
+
+    self.tiles[location.row][location.column] = mark;
+    self.numberOfMarkedTiles++;
 }
+
 
 - (NSArray *)checkForThreeContinuousMarks {
     
@@ -64,7 +70,7 @@ static const NSInteger BOARD_SIZE = 3;
     
     NSMutableArray *locations;
     
-    if ( self.tiles[row][0] == self.tiles[row][1] && self.tiles[row][1] == self.tiles[row][2]) {
+    if ( EMPTY != self.tiles[row][0] && self.tiles[row][0] == self.tiles[row][1] && self.tiles[row][1] == self.tiles[row][2]) {
         locations = [[NSMutableArray alloc]initWithCapacity:3];
         for(NSInteger j = 0; j< BOARD_SIZE; j++) {
             [locations addObject:[TileLocation locationWithRow:row column:j]];
@@ -78,7 +84,7 @@ static const NSInteger BOARD_SIZE = 3;
     
     NSMutableArray *locations;
     
-    if ( self.tiles[0][col] == self.tiles[1][col] && self.tiles[1][col] == self.tiles[2][col]) {
+    if (EMPTY != self.tiles[0][col] && self.tiles[0][col] == self.tiles[1][col] && self.tiles[1][col] == self.tiles[2][col]) {
         locations = [[NSMutableArray alloc]initWithCapacity:3];
         for(NSInteger i = 0; i< BOARD_SIZE; i++) {
             [locations addObject:[TileLocation locationWithRow:i column:col]];
@@ -92,7 +98,7 @@ static const NSInteger BOARD_SIZE = 3;
     
     NSMutableArray *locations;
     
-    if ( self.tiles[0][0] == self.tiles[1][1] && self.tiles[1][1] == self.tiles[2][2]) {
+    if ( EMPTY != self.tiles[0][0] && self.tiles[0][0] == self.tiles[1][1] && self.tiles[1][1] == self.tiles[2][2]) {
         locations = [[NSMutableArray alloc]initWithCapacity:3];
         for(NSInteger i = 0; i< BOARD_SIZE; i++) {
             [locations addObject:[TileLocation locationWithRow:i column:i]];
@@ -100,7 +106,7 @@ static const NSInteger BOARD_SIZE = 3;
     }
     
     
-    if (nil == locations && self.tiles[0][2] == self.tiles[1][1] && self.tiles[1][1] == self.tiles[2][0]) {
+    if (nil == locations && EMPTY != self.tiles[0][2] && self.tiles[0][2] == self.tiles[1][1] && self.tiles[1][1] == self.tiles[2][0]) {
         locations = [[NSMutableArray alloc]initWithCapacity:3];
         for(NSInteger i = 0; i< BOARD_SIZE; i++) {
             [locations addObject:[TileLocation locationWithRow:i column: BOARD_SIZE-i-1]];

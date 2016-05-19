@@ -9,6 +9,7 @@
 @property(nonatomic, strong) Player *player1;
 @property(nonatomic, strong) Player *player2;
 @property(nonatomic, strong) Player* currentPlayer;
+@property(nonatomic) GameStatus status;
 
 @end
 
@@ -37,14 +38,14 @@
 
 
 - (GameStatus)playMove:(TileLocation *)tileLocation {
-    
-    [self.board markTile:tileLocation withMark:self.currentPlayer];
 
-    GameStatus gameStatus = [self checkForGameStatus];
-    self.currentPlayer = [self nextPlayer];
-    return gameStatus;
+    if(self.status == NEXT_MOVE) {
+        [self.board markTile:tileLocation withMark:self.currentPlayer];
+        _status = [self checkForGameStatus];
+        self.currentPlayer = [self nextPlayer];
+    }
+    return _status;
 }
-
 
 - (GameStatus)checkForGameStatus {
     
@@ -66,13 +67,18 @@
     return self.currentPlayer == self.player1 ? self.player2 : self.player1;
 }
 
+- (Player *)currentPlayer {
+    return _currentPlayer;
+}
+
 //Property accessors
 
 - (Board *)board {
     if(!_board) {
-        _board = [[Board alloc]init];
+        _board = [Board emptyBoard];
     }
     return _board;
 }
+
 
 @end

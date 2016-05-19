@@ -18,5 +18,5 @@ typedef enum NSInteger {
 
 - (void)startGame;
 - (GameStatus)playMove:(TileLocation *)tileLocation;
-
+- (Player *)currentPlayer;
 @end

@@ -22,6 +22,15 @@
     mark2 = @"X";
 }
 
+
+- (void)testThatAnEmptyBoardIsReturend {
+    Board* board = [Board emptyBoard];
+    
+    assertThatLong([board numberOfMarkedTiles], equalToInt(0));
+    assertThatBool([board isTileMarked:[TileLocation locationWithRow:0 column:0]], equalToInt(false));
+}
+
+
 - (void)testThatItMarksTileAtGivenLocation {
     
     
@@ -32,10 +41,11 @@
                                                  ]mutableCopy]];
     NSInteger markingsBefore = board.numberOfMarkedTiles;
     assertThatLong(board.numberOfMarkedTiles, equalToLong(8));
-    
-    [board markTile:[TileLocation locationWithRow:1 column:1] withMark:mark1];
+    TileLocation* location = [TileLocation locationWithRow:1 column:1];
+    [board markTile:location withMark:mark1];
     
     assertThatLong(board.numberOfMarkedTiles, equalToLong(markingsBefore + 1));
+    assertThatBool([board isTileMarked:location], equalToInt(true));
 }
 
 

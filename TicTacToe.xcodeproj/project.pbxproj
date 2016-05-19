@@ -27,6 +27,7 @@
 		E957E80C1CE611B700426A5F /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80A1CE611B700426A5F /* Player.m */; };
 		E957E80F1CE629CA00426A5F /* TileLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80E1CE629CA00426A5F /* TileLocation.m */; };
 		E957E8101CE629CA00426A5F /* TileLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E957E80E1CE629CA00426A5F /* TileLocation.m */; };
+		E97F71D11CEDC93100EB11A4 /* TileCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E97F71D01CEDC93100EB11A4 /* TileCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,8 @@
 		E957E80A1CE611B700426A5F /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Player.m; path = Model/Player.m; sourceTree = "<group>"; };
 		E957E80D1CE629CA00426A5F /* TileLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileLocation.h; path = Model/TileLocation.h; sourceTree = "<group>"; };
 		E957E80E1CE629CA00426A5F /* TileLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileLocation.m; path = Model/TileLocation.m; sourceTree = "<group>"; };
+		E97F71CF1CEDC93100EB11A4 /* TileCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TileCollectionViewCell.h; path = ViewClasses/TileCollectionViewCell.h; sourceTree = "<group>"; };
+		E97F71D01CEDC93100EB11A4 /* TileCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TileCollectionViewCell.m; path = ViewClasses/TileCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,7 @@
 		E957E7C71CE6005600426A5F /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				E97F71CE1CEDC8B500EB11A4 /* ViewClasses */,
 				E957E8001CE6112B00426A5F /* Model */,
 				E957E7FB1CE6061100426A5F /* Controller */,
 				E957E7CB1CE6005600426A5F /* AppDelegate.h */,
@@ -209,6 +213,15 @@
 				E957E80E1CE629CA00426A5F /* TileLocation.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		E97F71CE1CEDC8B500EB11A4 /* ViewClasses */ = {
+			isa = PBXGroup;
+			children = (
+				E97F71CF1CEDC93100EB11A4 /* TileCollectionViewCell.h */,
+				E97F71D01CEDC93100EB11A4 /* TileCollectionViewCell.m */,
+			);
+			name = ViewClasses;
 			sourceTree = "<group>";
 		};
 		ED7AC3EECCAC7564081FF331 /* Frameworks */ = {
@@ -400,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E97F71D11CEDC93100EB11A4 /* TileCollectionViewCell.m in Sources */,
 				E957E7FE1CE6064900426A5F /* GameViewController.m in Sources */,
 				E957E7CD1CE6005600426A5F /* AppDelegate.m in Sources */,
 				E957E7CA1CE6005600426A5F /* main.m in Sources */,

@@ -15,6 +15,12 @@ NSString * const EMPTY = @"empty";
 
 @implementation Board
 
++ (Board *)emptyBoard {
+    Board* board = [[Board alloc]init];
+    return board;
+}
+
+
 - (instancetype)initWithTiles:(NSMutableArray *)tiles {
     self = [super init];
     if(self) {
@@ -32,15 +38,22 @@ NSString * const EMPTY = @"empty";
 
 - (void)reset {
     
+    self.tiles = nil;
+    self.numberOfMarkedTiles = 0;
 }
 
 
 - (void)markTile:(TileLocation *)location withMark:(NSObject *)mark {
 
-    self.tiles[location.row][location.column] = mark;
-    self.numberOfMarkedTiles++;
+    if(self.tiles[location.row][location.column] == EMPTY) {
+        self.tiles[location.row][location.column] = mark;
+        self.numberOfMarkedTiles++;
+    }
 }
 
+- (BOOL)isTileMarked:(TileLocation *)location {
+    return self.tiles[location.row][location.column] != EMPTY;
+}
 
 - (NSArray *)checkForThreeContinuousMarks {
     
@@ -116,6 +129,16 @@ NSString * const EMPTY = @"empty";
     return locations;
 }
 
+
+- (NSMutableArray *)tiles {
+    if(! _tiles) {
+        _tiles =  [@[ [@[EMPTY, EMPTY, EMPTY] mutableCopy],
+                          [@[EMPTY, EMPTY, EMPTY] mutableCopy],
+                          [@[EMPTY, EMPTY, EMPTY] mutableCopy]
+                          ] mutableCopy ];
+    }
+    return _tiles;
+}
 
 
 @end

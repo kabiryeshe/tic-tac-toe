@@ -9,9 +9,12 @@ extern NSString * const EMPTY;
 
 @property(nonatomic, readonly) NSInteger numberOfMarkedTiles;
 
++ (instancetype)emptyBoard;
 - (instancetype)initWithTiles:(NSArray *)tiles;
+
 - (void)reset;
 - (void)markTile:(TileLocation *)location withMark:(NSObject *)mark;
 - (NSArray *)checkForThreeContinuousMarks;
+- (BOOL)isTileMarked:(TileLocation *)location;
 
 @end

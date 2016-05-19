@@ -1,10 +1,3 @@
-//
-//  GameTest.m
-//  TicTacToe
-//
-//  Created by Tushar on 15/05/16.
-//  Copyright © 2016 thoughtworks. All rights reserved.
-//
 
 #import <XCTest/XCTest.h>
 #import <OCHamcrest/OCHamcrest.h>
@@ -12,13 +5,14 @@
 #import "Board.h"
 #import "Player.h"
 #import "TileLocation.h"
+#import <OCMock/OCMock.h>
 
 @interface GameTest : XCTestCase {
     NSString* mark1;
     NSString* mark2;
     Player* firstPlayer;
     Player* secondPlayer;
-    NSObject *empty;
+    id board;
 }
 
 @end
@@ -29,16 +23,14 @@
     [super setUp];
     firstPlayer = [[Player alloc]init];
     secondPlayer = [[Player alloc]init];
+    board = OCMClassMock([Board class]);
+    
 }
 
 
 - (void)testThatGameContinuesWhenNoDrawOrVictory {
     
-    Board* board = [[Board alloc]initWithTiles:[@[
-                                                 [@[firstPlayer, firstPlayer, secondPlayer] mutableCopy],
-                                                 [@[EMPTY, EMPTY, EMPTY] mutableCopy],
-                                                 [@[EMPTY, EMPTY, EMPTY] mutableCopy]
-                                                 ] mutableCopy] ];
+    OCMStub([board numberOfMarkedTiles]).andReturn(4);
 
     Game* game = [[Game alloc]initWithGameBoard:board firstPlayer:firstPlayer secondPlayer:secondPlayer];
     
@@ -49,27 +41,25 @@
 
 - (void)testThatGameIsWon {
     
-    Board* board = [[Board alloc]initWithTiles:[@[
-                                                  [@[firstPlayer, firstPlayer, secondPlayer] mutableCopy],
-                                                  [@[firstPlayer, EMPTY, EMPTY] mutableCopy],
-                                                  [@[EMPTY, EMPTY, EMPTY] mutableCopy]
-                                                  ] mutableCopy] ];
+    TileLocation* tileLocation = [TileLocation locationWithRow:2 column:0];
+    NSArray* markedTiles = @[tileLocation,
+                             [TileLocation locationWithRow:2 column:1],
+                             [TileLocation locationWithRow:2 column:2]
+                            ];
+    OCMStub([board numberOfMarkedTiles]).andReturn(7);
+    OCMStub([board checkForThreeContinuousMarks]).andReturn(markedTiles);
     
     Game* game = [[Game alloc]initWithGameBoard:board firstPlayer:firstPlayer secondPlayer:secondPlayer];
     
-    GameStatus status = [game playMove:[TileLocation locationWithRow:2 column:0]];
+    GameStatus status = [game playMove:tileLocation];
     
     assertThatLong(status, equalToLong(PLAYER_1_WINS));
 }
 
 - (void)testThatGameIsDrawn {
     
-    Board* board = [[Board alloc]initWithTiles:[@[
-                                                  [@[secondPlayer, firstPlayer, secondPlayer] mutableCopy],
-                                                  [@[firstPlayer, firstPlayer, secondPlayer] mutableCopy],
-                                                  [@[secondPlayer, secondPlayer, EMPTY] mutableCopy]
-                                                  ] mutableCopy] ];
-    
+    OCMStub([board numberOfMarkedTiles]).andReturn(9);
+    OCMStub([board checkForThreeContinuousMarks]).andReturn(nil);
     Game* game = [[Game alloc]initWithGameBoard:board firstPlayer:firstPlayer secondPlayer:secondPlayer];
     
     GameStatus status = [game playMove:[TileLocation locationWithRow:2 column:2]];

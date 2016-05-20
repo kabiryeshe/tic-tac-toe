@@ -16,7 +16,7 @@ typedef enum NSInteger {
                        firstPlayer:(Player *)player1
                       secondPlayer:(Player *)player2;
 
-- (void)startGame;
+- (void)restartGame;
 - (GameStatus)playMove:(TileLocation *)tileLocation;
 - (Player *)currentPlayer;
 @end

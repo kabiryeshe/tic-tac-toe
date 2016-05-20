@@ -18,6 +18,8 @@
 @property(nonatomic, strong) Game* game;
 @property(nonatomic, strong) Player* firstPlayer;
 @property(nonatomic, strong) Player* secondPlayer;
+@property (weak, nonatomic) IBOutlet UIButton *button;
+@property (weak, nonatomic) IBOutlet UICollectionView *tilesCollectionView;
 @property(nonatomic, strong) Board* board;
 @end
 
@@ -30,6 +32,7 @@
                                    firstPlayer:self.firstPlayer
                                   secondPlayer:self.secondPlayer];
     self.statusLabel.text = [NSString stringWithFormat: @"%@, your turn", [self.game currentPlayer].name];
+    [self.button setHidden:YES];
 }
 
 
@@ -71,12 +74,25 @@
         case NEXT_MOVE: self.statusLabel.text = [NSString stringWithFormat: @"%@, your turn", [self.game currentPlayer].name];
             break;
         case PLAYER_1_WINS: self.statusLabel.text = [NSString stringWithFormat: @"%@, wins", self.firstPlayer.name];
+            [self setReadyForRestart];
             break;
         case PLAYER_2_WINS: self.statusLabel.text = [NSString stringWithFormat: @"%@, wins", self.secondPlayer.name];
+            [self setReadyForRestart];
             break;
         case DRAW: self.statusLabel.text = @"It's a draw !";
+            [self setReadyForRestart];
             break;
     }
+}
+
+- (void)setReadyForRestart {
+    [self.button setHidden:false];
+}
+
+- (IBAction)startRestartButtonPressed:(id)sender {
+    [self.statusLabel setText:@""];
+    [self.tilesCollectionView reloadData];
+    [self.game restartGame];
 }
 
 - (Player *)firstPlayer {

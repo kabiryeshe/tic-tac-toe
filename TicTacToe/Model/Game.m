@@ -25,14 +25,16 @@
         _player1 = player1;
         _player2 = player2;
         _currentPlayer = player1;
+        _status = NEXT_MOVE;
     }
     
     return self;
 }
 
-- (void)startGame {
+- (void)restartGame {
     
     self.currentPlayer = self.player1;
+    self.status = NEXT_MOVE;
     [self.board reset];
 }
 

@@ -86,12 +86,14 @@
 }
 
 - (void)setReadyForRestart {
-    [self.button setHidden:false];
+    [self.tilesCollectionView setUserInteractionEnabled:NO];
+    [self.button setHidden:NO];
 }
 
 - (IBAction)startRestartButtonPressed:(id)sender {
     [self.statusLabel setText:@""];
     [self.tilesCollectionView reloadData];
+    [self.tilesCollectionView setUserInteractionEnabled:YES];
     [self.game restartGame];
 }
 

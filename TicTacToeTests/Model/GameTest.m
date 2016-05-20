@@ -28,7 +28,7 @@
 }
 
 
-- (void)testThatGameContinuesWhenNoDrawOrVictory {
+- (void)testThatGameContinuesWhenNotDrawOrVictory {
     
     OCMStub([board numberOfMarkedTiles]).andReturn(4);
 
@@ -67,5 +67,20 @@
     assertThatLong(status, equalToLong(DRAW));
 }
 
+- (void)testThatGameIsWonWhenBoardIsFull {
+    
+    OCMStub([board numberOfMarkedTiles]).andReturn(9);
+    TileLocation* tileLocation = [TileLocation locationWithRow:2 column:0];
+    NSArray* markedTiles = @[tileLocation,
+                             [TileLocation locationWithRow:2 column:1],
+                             [TileLocation locationWithRow:2 column:2]
+                             ];
+    OCMStub([board checkForThreeContinuousMarks]).andReturn(markedTiles);
+    Game* game = [[Game alloc]initWithGameBoard:board firstPlayer:firstPlayer secondPlayer:secondPlayer];
+    
+    GameStatus status = [game playMove:[TileLocation locationWithRow:2 column:2]];
+    
+    assertThatLong(status, equalToLong(PLAYER_1_WINS));
+}
 
 @end

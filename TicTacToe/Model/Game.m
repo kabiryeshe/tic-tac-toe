@@ -40,7 +40,7 @@
 
 
 - (GameStatus)playMove:(TileLocation *)tileLocation {
-
+    
     if(self.status == NEXT_MOVE) {
         [self.board markTile:tileLocation withMark:self.currentPlayer];
         _status = [self checkForGameStatus];
@@ -54,13 +54,13 @@
     if(self.board.numberOfMarkedTiles < 5) {
         return NEXT_MOVE;
     }
-    if(self.board.numberOfMarkedTiles == 9) {
-        return DRAW;
-    }
+
     NSArray *tileLocations = [self.board checkForThreeContinuousMarks];
     if(tileLocations && [tileLocations count] == 3) {
         return self.currentPlayer == self.player1 ? PLAYER_1_WINS : PLAYER_2_WINS;
-        
+    }
+    if(self.board.numberOfMarkedTiles == 9) {
+        return DRAW;
     }
     return NEXT_MOVE;
 }
